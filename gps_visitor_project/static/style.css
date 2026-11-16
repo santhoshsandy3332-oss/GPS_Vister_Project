@@ -1,0 +1,61 @@
+:root { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; color: #172033; background: #f4f7fb; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; }
+.topbar { height: 64px; padding: 0 max(22px, calc((100% - 1100px)/2)); display:flex; align-items:center; justify-content:space-between; background:#fff; border-bottom:1px solid #e7ebf2; }
+.brand { font-weight:800; color:#172033; text-decoration:none; letter-spacing:-.3px; }
+.navlink { color:#42526b; text-decoration:none; font-size:14px; }
+.container { width:min(1100px, calc(100% - 32px)); margin:44px auto; }
+.panel { background:#fff; border:1px solid #e5eaf1; border-radius:18px; padding:28px; margin-bottom:22px; box-shadow:0 8px 28px rgba(20,35,60,.045); }
+.form-panel { max-width:520px; margin:20px auto; }
+.narrow { max-width:440px; }
+h1 { margin:8px 0 10px; font-size:30px; letter-spacing:-1px; }
+h2 { margin:0 0 14px; font-size:19px; }
+p { line-height:1.55; }
+.muted { color:#69778c; }
+.small { font-size:13px; }
+.eyebrow { color:#2563eb; font-size:11px; font-weight:800; letter-spacing:1.4px; }
+label { display:block; font-size:13px; font-weight:650; margin:18px 0 7px; }
+input:not([type=checkbox]) { width:100%; border:1px solid #d8e0eb; border-radius:10px; padding:13px 14px; font:inherit; outline:none; background:#fff; }
+input:focus { border-color:#5488ed; box-shadow:0 0 0 3px rgba(37,99,235,.10); }
+.consent { background:#f5f8fd; border:1px solid #e5ebf4; border-radius:12px; padding:14px; margin-top:20px; }
+.consent p { margin:7px 0; font-size:13px; color:#66758b; }
+.check { display:flex; align-items:flex-start; gap:9px; font-weight:500; line-height:1.4; margin:12px 0 0; }
+.check input { margin-top:3px; }
+button, .button { border:0; border-radius:10px; background:#2563eb; color:white; padding:13px 17px; font:inherit; font-weight:700; cursor:pointer; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; }
+form > button { width:100%; margin-top:16px; }
+button:disabled { opacity:.6; cursor:wait; }
+button.secondary, .button.secondary { background:#eef2f8; color:#334155; }
+.status { min-height:20px; font-size:13px; color:#475569; }
+.notice { border-radius:10px; padding:12px 15px; margin:0 auto 16px; max-width:650px; background:#fff1f2; color:#9f1239; }
+.center { text-align:center; max-width:600px; margin:40px auto; }
+.success-icon { width:54px; height:54px; display:grid; place-items:center; margin:auto; border-radius:50%; background:#dcfce7; color:#15803d; font-size:30px; font-weight:800; }
+.dashboard-head, .table-head, .actions { display:flex; align-items:center; justify-content:space-between; gap:14px; }
+.dashboard-head { margin-bottom:20px; }
+.actions form { margin:0; }
+.actions button { margin:0; }
+.stats { margin-bottom:18px; }
+.stat-card { background:#fff; border:1px solid #e5eaf1; border-radius:14px; padding:17px 20px; display:inline-flex; flex-direction:column; gap:5px; min-width:190px; }
+.stat-card span { color:#64748b; font-size:13px; }
+.stat-card strong { font-size:28px; }
+#map { height:390px; border-radius:12px; overflow:hidden; background:#e8edf4; }
+.table-head { margin-bottom:15px; }
+.search { display:flex; gap:8px; }
+.search input { min-width:220px; }
+.search button { margin:0; }
+.table-wrap { overflow-x:auto; }
+table { border-collapse:collapse; width:100%; font-size:13px; white-space:nowrap; }
+th, td { text-align:left; padding:12px 10px; border-bottom:1px solid #edf0f5; }
+th { color:#64748b; font-size:11px; text-transform:uppercase; letter-spacing:.5px; }
+.empty { text-align:center; color:#64748b; padding:28px; }
+footer { text-align:center; padding:12px 20px 28px; color:#8490a2; font-size:12px; }
+@media (max-width:650px) {
+  .container { margin:24px auto; }
+  .panel { padding:20px; }
+  h1 { font-size:25px; }
+  .dashboard-head, .table-head { align-items:flex-start; flex-direction:column; }
+  .actions { width:100%; }
+  .actions .button, .actions form, .actions button { flex:1; }
+  .search { width:100%; }
+  .search input { min-width:0; }
+  #map { height:300px; }
+}
